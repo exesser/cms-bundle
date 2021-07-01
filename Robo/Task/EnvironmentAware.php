@@ -10,7 +10,7 @@ trait EnvironmentAware
         $givenEnv = $_ENV['APP_ENV'] ?? null;
         $env = (new Dotenv(false));
 
-        $envDirectory = __DIR__ . '/../../../../../../';
+        $envDirectory = __DIR__ . '/../../../../../../../../';
 
         $env->loadEnv("$envDirectory.env");
         if ($givenEnv !== null) {
